@@ -1,38 +1,76 @@
-.App {
+.form
+{
   text-align: center;
+  border: 1px solid green;
+  width: 30vw;
+  height: 70vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.field
+{
+  position: relative;
+  border: 1px solid green;
+  width: 30vw;
+  height: 70vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.half-field
+{
+  position: relative;
+  height: 47%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-form
+{
+  margin-top: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+input
+{
+  border: 1px solid black;
+  background-color: lightgrey;
+  text-align: center;
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-name
+{
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+}
+.user-points
+{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.btn-next
+{
+  width: 7vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 10px;
+}
+.comp-card
+{
+  position: absolute;
+  right: 11vw;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+}
+.user-card
+{
+  position: absolute;
+  right: 11.5vw;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+}
+.last-field
+{
+  text-align: center;
+  border: 1px solid green;
+  width: 30vw;
+  height: 70vh;
+}
+.last-field > h1
+{
+  color: blue;
 }
