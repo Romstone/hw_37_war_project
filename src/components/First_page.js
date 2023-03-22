@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Second_page from "./Second_page";
 
-class FirstPage extends Component {
+class FirstPage extends Component
+{
     constructor(props)
     {
         super(props);
@@ -16,7 +17,8 @@ class FirstPage extends Component {
         this.setState({userName: name});
     }
 
-    render() {
+    render()
+    {
         return (
             !this.state.userName ?
             <div className={'container form'}>

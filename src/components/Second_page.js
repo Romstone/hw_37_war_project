@@ -3,14 +3,16 @@ import {deckShuffler} from "../utils/instruments";
 import {deck} from "../utils/constants";
 import Third_page from "./Third_page";
 
-class SecondPage extends Component {
-    deck = deckShuffler([...deck])
-    constructor(props) {
+class SecondPage extends Component
+{
+    deck = deckShuffler([...deck]);
+    computerDeck = this.deck.slice(this.deck.length / 2);
+    userDeck = this.deck.slice(0, this.deck.length / 2);
+    constructor(props)
+    {
         super(props);
         this.state =
             {
-                computerDeck: this.deck.slice(this.deck.length / 2),
-                userDeck: this.deck.slice(0, this.deck.length / 2),
                 compCurrentCard: '',
                 userCurrentCard: '',
                 computerPoints: 0,
@@ -19,16 +21,17 @@ class SecondPage extends Component {
             }
     }
 
-    componentDidMount() {
+    componentDidMount()
+    {
         this.putCards();
     }
 
     putCards = () =>
     {
-        if (this.state.computerDeck.length > 1)
+        if (this.computerDeck.length > 1)
         {
-            const compCard = this.state.computerDeck.shift();
-            const userCard = this.state.userDeck.shift();
+            const compCard = this.computerDeck.shift();
+            const userCard = this.userDeck.shift();
             if (compCard.rank > userCard.rank)
                 this.setState({...this.state, compCurrentCard: compCard, userCurrentCard: userCard, computerPoints: this.state.computerPoints+1});
             else if (compCard.rank < userCard.rank)
@@ -42,7 +45,8 @@ class SecondPage extends Component {
         }
     }
 
-    render() {
+    render()
+    {
         return (
             !this.state.gameOver ?
             <div className={'container field'}>

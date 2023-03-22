@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import Second_page from "./Second_page";
 
-class Third_page extends Component {
+class Third_page extends Component
+{
     cPoints = this.props.computerPoints;
     uPoints = this.props.userPoints;
-    constructor(props) {
+    constructor(props)
+    {
         super(props);
         this.state =
             {
@@ -17,7 +19,8 @@ class Third_page extends Component {
         this.setState({playAgain: true});
     }
 
-    render() {
+    render()
+    {
         return (
             !this.state.playAgain ?
             <div className={'container last-field'}>
