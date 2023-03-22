@@ -30,8 +30,8 @@ class SecondPage extends Component
     {
         if (this.computerDeck.length > 1)
         {
-            const compCard = this.computerDeck.shift();
-            const userCard = this.userDeck.shift();
+            const compCard = this.computerDeck.pop();
+            const userCard = this.userDeck.pop();
             if (compCard.rank > userCard.rank)
                 this.setState({...this.state, compCurrentCard: compCard, userCurrentCard: userCard, computerPoints: this.state.computerPoints+1});
             else if (compCard.rank < userCard.rank)
