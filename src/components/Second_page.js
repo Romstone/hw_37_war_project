@@ -64,7 +64,7 @@ class SecondPage extends Component {
                     <h3 className={'user-points'}>Points: {this.state.userPoints}</h3>
                 </div>
                 <button className={'btn btn-success btn-next'} onClick={this.putCards}>Next</button>
-            </div> : <Third_page computerPoints={this.state.computerPoints} userPoints={this.state.userPoints} playAgain={this.playAgain}/>
+            </div> : <Third_page computerPoints={this.state.computerPoints} userPoints={this.state.userPoints} playAgain={this.playAgain} userName={this.props.userName}/>
         );
     }
 }

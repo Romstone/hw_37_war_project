@@ -24,7 +24,7 @@ class Third_page extends Component {
                 <h1>{this.cPoints > this.uPoints ? 'LOSE' : this.cPoints < this.uPoints ? 'WIN' : 'SPARE'}</h1>
                 <h2>{this.uPoints} - {this.cPoints}</h2>
                 <button className={'btn btn-success'} onClick={this.playAgain}>Again?</button>
-            </div> : <Second_page/>
+            </div> : <Second_page userName={this.props.userName}/>
         );
     }
 }
