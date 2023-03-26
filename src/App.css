@@ -52,16 +52,14 @@ input
   position: absolute;
   right: 11vw;
   width: 150px;
-  height: 200px;
-  border: 1px solid black;
+  height: 208px;
 }
 .user-card
 {
   position: absolute;
   right: 11.5vw;
   width: 150px;
-  height: 200px;
-  border: 1px solid black;
+  height: 208px;
 }
 .last-field
 {

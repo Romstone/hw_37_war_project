@@ -1,4 +1,5 @@
-export const deckShuffler = (arr) =>
+//used in previous version, still can be used if api doesn't work
+/*export const deckShuffler = (arr) =>
 {
     for (let i = 0; i < arr.length; i++)
     {
@@ -8,4 +9,4 @@ export const deckShuffler = (arr) =>
         arr[j] = temp;
     }
     return arr;
-}
+}*/
